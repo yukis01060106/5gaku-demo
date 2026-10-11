@@ -301,6 +301,81 @@
         </article>
       </div>
 
+      <!-- 拠点別ペルソナ -->
+      <div class="persona">
+        <div class="persona__head">
+          <p class="persona__en">By Location</p>
+          <h3 class="persona__title">会社の場所で、<br>おすすめの組み方は変わる。</h3>
+          <p class="persona__lead">研修に使える補助金・助成金は、「どこの事業所の社員が受けるか」と「研修が何時間か」で選べる制度が変わります。拠点ごとのおすすめの組み方です。</p>
+        </div>
+
+        <div class="persona__tabs" role="tablist" aria-label="会社の拠点">
+          <button class="persona__btn is-active" role="tab" aria-selected="true" aria-controls="persona-kumamoto" data-persona="kumamoto">熊本の企業さま</button>
+          <button class="persona__btn" role="tab" aria-selected="false" aria-controls="persona-fukuoka" data-persona="fukuoka">福岡の企業さま</button>
+          <button class="persona__btn" role="tab" aria-selected="false" aria-controls="persona-tokyo" data-persona="tokyo">東京・関東の企業さま</button>
+        </div>
+
+        <!-- 熊本 -->
+        <article class="persona__panel is-active" id="persona-kumamoto" role="tabpanel">
+          <div class="persona__story">
+            <p class="persona__tag">Kumamoto</p>
+            <h4>日帰り圏だから、<br>1泊2日・9時間でちょうどいい。</h4>
+            <p>県内に事業所がある中小企業さま。部署単位（〜12名ほど）で、生成AI研修やチームビルディングを。研修を10時間未満に収めると、熊本県の補助金の対象になります。</p>
+            <ol class="persona__days">
+              <li><b>Day 1</b>夕方チェックイン → 研修 4時間 → 炭火BBQ・サウナ</li>
+              <li><b>Day 2</b>朝の外気浴 → 研修 5時間 → 解散</li>
+            </ol>
+          </div>
+          <dl class="persona__spec">
+            <div><dt>おすすめ日程</dt><dd>1泊2日</dd></div>
+            <div><dt>研修時間の目安</dt><dd>合計 9時間<small>10時間未満が補助の条件</small></dd></div>
+            <div><dt>検討できる制度</dt><dd>熊本県リスキリング応援補助金<small>受講費・教材費などの3/4、上限50万円（宿泊費・交通費は対象外）</small></dd></div>
+            <div><dt>対象になる人</dt><dd>熊本県内の事業所で働く従業員<small>いわゆる「みなし大企業」は対象外</small></dd></div>
+          </dl>
+        </article>
+
+        <!-- 福岡 -->
+        <article class="persona__panel" id="persona-fukuoka" role="tabpanel" hidden>
+          <div class="persona__story">
+            <p class="persona__tag">Fukuoka</p>
+            <h4>陸路で来られる距離を、<br>そのままチームの時間に。</h4>
+            <p>福岡に本社がある企業さま。熊本県内にも事業所があり、そこの社員が参加する場合は熊本県の補助金も検討できます。ない場合は、国の助成金に合わせて研修を10時間以上でしっかり組めます。</p>
+            <ol class="persona__days">
+              <li><b>Day 1</b>午前移動 → 研修 6時間 → 焚き火で振り返り</li>
+              <li><b>Day 2</b>研修 6時間 → サウナでクールダウン → 帰路</li>
+            </ol>
+          </div>
+          <dl class="persona__spec">
+            <div><dt>おすすめ日程</dt><dd>1泊2日〜2泊3日</dd></div>
+            <div><dt>研修時間の目安</dt><dd>合計 12時間<small>国の助成金は10時間以上が条件（移動時間は含まない）</small></dd></div>
+            <div><dt>検討できる制度</dt><dd>人材開発支援助成金（人材育成支援コース）<small>経費の45%〜、賃金助成 1人1時間800円〜</small></dd></div>
+            <div><dt>事前の手続き</dt><dd>研修開始の1か月前までに計画届<small>熊本県内の事業所の社員なら県補助金も検討可</small></dd></div>
+          </dl>
+        </article>
+
+        <!-- 東京 -->
+        <article class="persona__panel" id="persona-tokyo" role="tabpanel" hidden>
+          <div class="persona__story">
+            <p class="persona__tag">Tokyo</p>
+            <h4>空路で入って、<br>2泊3日のオフサイトへ。</h4>
+            <p>東京・関東の企業さま。移動で丸1日かかる分、中日に研修をまとめて置く2泊3日がおすすめです。国の助成金で研修費と研修中の賃金の一部をカバー。滞在中のリモートワークを組み合わせることもできます。</p>
+            <ol class="persona__days">
+              <li><b>Day 1</b>阿蘇くまもと空港 → チェックイン → サウナで切り替え</li>
+              <li><b>Day 2</b>研修 6時間 → 炭火BBQ</li>
+              <li><b>Day 3</b>研修 6時間 → 空港へ</li>
+            </ol>
+          </div>
+          <dl class="persona__spec">
+            <div><dt>おすすめ日程</dt><dd>2泊3日</dd></div>
+            <div><dt>研修時間の目安</dt><dd>合計 12時間<small>国の助成金は10時間以上が条件（移動時間は含まない）</small></dd></div>
+            <div><dt>検討できる制度</dt><dd>人材開発支援助成金（人材育成支援コース）<small>経費の45%〜、賃金助成 1人1時間800円〜。テレワーク関連の助成金も要件次第で検討可</small></dd></div>
+            <div><dt>事前の手続き</dt><dd>研修開始の1か月前までに計画届</dd></div>
+          </dl>
+        </article>
+
+        <p class="persona__note">※ 制度の内容は2026年10月時点の公表情報をもとにした目安です。要件・予算・受付状況は変わることがあります。申請できるかどうか・金額は、熊本県・労働局の窓口や社会保険労務士などの専門家にご確認ください。県の補助金と国の助成金を同じ研修費に重ねて使うことは基本的にできません。</p>
+      </div>
+
       <ol class="flow">
         <li><b>01</b>お問い合わせ</li>
         <li><b>02</b>ヒアリング</li>

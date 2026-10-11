@@ -65,6 +65,21 @@
   }
   $$('.tabs__btn').forEach(b => b.addEventListener('click', () => setTab(b.dataset.tab)));
 
+  /* ---------- 法人: 拠点別ペルソナ ---------- */
+  $$('.persona__btn').forEach(btn => btn.addEventListener('click', () => {
+    const name = btn.dataset.persona;
+    $$('.persona__btn').forEach(b => {
+      const on = b === btn;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-selected', String(on));
+    });
+    $$('.persona__panel').forEach(p => { p.hidden = p.id !== `persona-${name}`; p.classList.toggle('is-active', !p.hidden); });
+    if (hasGsap) {
+      gsap.fromTo(`#persona-${name} > *`, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .7, stagger: .08, ease: 'power3.out' });
+      ScrollTrigger.refresh();
+    }
+  }));
+
   /* ---------- rooms: drag to scroll ---------- */
   const track = $('[data-drag]');
   if (track) {
