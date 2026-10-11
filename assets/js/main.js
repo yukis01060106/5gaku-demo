@@ -24,7 +24,7 @@
   }
   const scrollToEl = el => {
     if (!el) return;
-    lenis ? lenis.scrollTo(el, { offset: -60 }) : el.scrollIntoView({ behavior: 'smooth' });
+    lenis ? lenis.scrollTo(el, { offset: -100 }) : el.scrollIntoView({ behavior: 'smooth' });
   };
 
   /* ---------- header / drawer ---------- */
@@ -79,6 +79,18 @@
       ScrollTrigger.refresh();
     }
   }));
+
+  /* ---------- URLで直接開く: #biz / #kumamoto / #fukuoka / #tokyo ---------- */
+  const openFromHash = () => {
+    const h = location.hash.slice(1);
+    const persona = ['kumamoto', 'fukuoka', 'tokyo'].includes(h) ? h : null;
+    if (h !== 'biz' && !persona) return;
+    setTab('biz');
+    if (persona) $(`[data-persona="${persona}"]`).click();
+    setTimeout(() => scrollToEl(persona ? $('#persona') : $('#plans')), 150);
+  };
+  addEventListener('load', () => setTimeout(openFromHash, 300));
+  addEventListener('hashchange', openFromHash);
 
   /* ---------- rooms: drag to scroll ---------- */
   const track = $('[data-drag]');
