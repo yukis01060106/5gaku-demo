@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【デザイン案】5GAKU | 南阿蘇サウナ — 阿蘇五岳を望む、全室プライベートサウナの宿</title>
+<meta name="description" content="熊本・南阿蘇。阿蘇五岳を望む全5室、すべての客室にプライベートサウナと天然水の水風呂。個人旅行から法人のオフサイト・研修まで。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.demo-bar { position: fixed; inset: 0 0 auto 0; z-index: 100; height: 26px; display: flex; align-items: center; justify-content: center;
+  background: #b0633b; color: #fff; font: 500 11px/1 "Hiragino Sans", "Noto Sans JP", sans-serif; letter-spacing: .08em; white-space: nowrap; }
+.header { top: 26px; }
+</style>
+</head>
+<body>
+<div class="demo-bar">デザイン案（DEMO）— 公式サイトではありません・料金等は仮</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <a href="#top" class="header__logo" aria-label="5GAKU トップへ">
+    <span class="logo-mark">5GAKU</span>
+    <span class="logo-sub">MINAMIASO SAUNA</span>
+  </a>
+  <nav class="header__nav" aria-label="メインメニュー">
+    <a href="#concept">Concept</a>
+    <a href="#sauna">Sauna</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#taste">Taste</a>
+    <a href="#plans">Plans</a>
+    <a href="#access">Access</a>
+  </nav>
+  <div class="header__cta">
+    <a href="#plans" class="btn btn--ghost" data-plan-link="biz">法人のお客様</a>
+    <a href="#reserve" class="btn btn--solid">ご予約</a>
+  </div>
+  <button class="header__menu" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav>
+    <a href="#concept">Concept<small>五岳の宿</small></a>
+    <a href="#sauna">Sauna<small>熱・水・風</small></a>
+    <a href="#rooms">Rooms<small>客室</small></a>
+    <a href="#taste">Taste<small>食</small></a>
+    <a href="#plans">Plans<small>個人・法人プラン</small></a>
+    <a href="#access">Access<small>アクセス</small></a>
+  </nav>
+</div>
+
+<main id="top">
+
+<!-- ============ FIRST VIEW (scroll-driven) ============ -->
+<section class="fv" id="fv" aria-label="ファーストビュー">
+  <div class="fv__stage">
+    <div class="fv__media">
+      <div class="fv__img fv__img--1" style="background-image:url(assets/img/fv-aerial.jpg)"></div>
+      <div class="fv__img fv__img--2" style="background-image:url(assets/img/fv-balcony.jpg)"></div>
+      <div class="fv__window">
+        <div class="fv__img fv__img--3" style="background-image:url(assets/img/sauna-window.jpg)"></div>
+      </div>
+      <div class="fv__img fv__img--4" style="background-image:url(assets/img/fv-loyly.jpg)"></div>
+      <div class="fv__shade"></div>
+      <div class="fv__grain"></div>
+    </div>
+
+    <!-- Scene 0: brand -->
+    <div class="fv__brand">
+      <p class="fv__eyebrow">MINAMIASO&nbsp;&nbsp;·&nbsp;&nbsp;KUMAMOTO</p>
+      <h1 class="fv__logo"><span>5</span><span>G</span><span>A</span><span>K</span><span>U</span></h1>
+      <p class="fv__lead">阿蘇五岳を望む、全室プライベートサウナの宿</p>
+    </div>
+
+    <!-- Scene 1-2: vertical copy -->
+    <p class="fv__copy fv__copy--a" data-split>五つの峰を、</p>
+    <p class="fv__copy fv__copy--b" data-split>ひとりじめする。</p>
+
+    <!-- Scene 3 -->
+    <p class="fv__copy fv__copy--c" data-split>熱と、水と、阿蘇の風。</p>
+
+    <!-- Scene 4 -->
+    <div class="fv__final">
+      <p class="fv__final-en">Heat, water, and the wind of Aso.</p>
+      <p class="fv__final-ja">ととのう、という贅沢を。</p>
+      <p class="fv__final-body">南阿蘇の田園にひらく、全5室の小さな宿。<br>すべての客室にプライベートサウナ。<br>窓の向こうには、いつも五岳が座っています。</p>
+    </div>
+    <ul class="fv__peaks" aria-label="阿蘇五岳">
+      <li>根子岳<small>Nekodake</small></li>
+      <li>高岳<small>Takadake</small></li>
+      <li>中岳<small>Nakadake</small></li>
+      <li>杵島岳<small>Kishimadake</small></li>
+      <li>烏帽子岳<small>Eboshidake</small></li>
+    </ul>
+
+    <div class="fv__progress" aria-hidden="true">
+      <span class="fv__count"><b>01</b> / 04</span>
+      <span class="fv__bar"><i></i></span>
+    </div>
+    <div class="fv__scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="concept" id="concept">
+  <div class="wrap concept__grid">
+    <div class="concept__head">
+      <p class="label"><span>01</span>Concept</p>
+      <h2 class="vtitle reveal">峰と、湯気の<br>あいだで。</h2>
+    </div>
+    <div class="concept__body">
+      <p class="lead reveal">
+        カルデラの南側、田んぼの海の向こうに五つの峰が横たわる。<br>
+        根子岳、高岳、中岳、杵島岳、烏帽子岳。<br>
+        その全景を正面に受けとめる場所に、5GAKUはあります。
+      </p>
+      <p class="reveal">
+        客室は全5室。それぞれにプライベートサウナを備え、誰にも気をつかわずに、好きな温度で、好きなだけ。
+        汗を流したら、阿蘇の天然水の水風呂へ。テラスに出れば、外輪山から降りてくる風が火照った体をなでていきます。
+      </p>
+      <figure class="concept__fig reveal-img">
+        <img src="assets/img/room-window.jpg" alt="客室の三連窓から望む阿蘇の山並み" loading="lazy">
+        <figcaption>客室の窓から望む、南阿蘇の朝</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <dl class="wrap facts">
+    <div class="reveal"><dt>Rooms</dt><dd><b>5</b><span>室</span></dd><p>一日5組だけの静けさ</p></div>
+    <div class="reveal"><dt>Private Sauna</dt><dd><b>全室</b></dd><p>客室ごとのプライベートサウナ</p></div>
+    <div class="reveal"><dt>Capacity</dt><dd><b>6</b><span>名 / 室</span></dd><p>家族・仲間・チームで</p></div>
+    <div class="reveal"><dt>Whole Stay</dt><dd><b>30</b><span>名</span></dd><p>一棟貸切で最大人数</p></div>
+  </dl>
+</section>
+
+<!-- ============ SAUNA ============ -->
+<section class="sauna" id="sauna">
+  <div class="sauna__hero">
+    <div class="sauna__hero-img" style="background-image:url(assets/img/sauna-window.jpg)"></div>
+    <div class="wrap sauna__hero-txt">
+      <p class="label label--light"><span>02</span>Sauna</p>
+      <h2 class="title reveal">窓いっぱいの阿蘇を、<br>サウナの中から。</h2>
+    </div>
+  </div>
+
+  <div class="wrap sauna__steps">
+    <article class="step reveal">
+      <figure><img src="assets/img/fv-loyly.jpg" alt="サウナストーンに柄杓で水をかけるロウリュ" loading="lazy"></figure>
+      <p class="step__no">01 <span>熱</span></p>
+      <h3>Heat</h3>
+      <p>木の香りに包まれたプライベートサウナ。ロウリュの蒸気越しに、五岳の稜線がにじむ。</p>
+    </article>
+    <article class="step reveal">
+      <figure><img src="assets/img/bbq-view.jpg" alt="屋外のあずまやから見る阿蘇の山々" loading="lazy"></figure>
+      <p class="step__no">02 <span>水</span></p>
+      <h3>Water</h3>
+      <p>阿蘇の大地がろ過した天然水の水風呂。キリッと冷たく、肌あたりはやわらかい。</p>
+    </article>
+    <article class="step reveal">
+      <figure><img src="assets/img/fv-balcony.jpg" alt="バルコニーの外気浴チェアと田園風景" loading="lazy"></figure>
+      <p class="step__no">03 <span>風</span></p>
+      <h3>Air</h3>
+      <p>外気浴チェアに身をあずけ、外輪山から降りてくる風を待つ。ここで、ととのう。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ ROOMS ============ -->
+<section class="rooms" id="rooms">
+  <div class="wrap rooms__head">
+    <div>
+      <p class="label"><span>03</span>Rooms</p>
+      <h2 class="title reveal">五つの部屋、<br>五つの眺め。</h2>
+    </div>
+    <p class="rooms__intro reveal">G1からG5まで、全5室。<br>すべてにプライベートサウナ、キッチン、ワークスペースを備え、最大6名さままでご滞在いただけます。</p>
+  </div>
+
+  <div class="rooms__track" data-drag>
+    <article class="room">
+      <figure><img src="assets/img/room-living-a.jpg" alt="G1 客室リビング" loading="lazy"></figure>
+      <div class="room__meta"><span class="room__id">G1</span><span>〜6名</span><span>サウナ・キッチン付</span></div>
+    </article>
+    <article class="room">
+      <figure><img src="assets/img/room-living-b.jpg" alt="G2 客室リビング" loading="lazy"></figure>
+      <div class="room__meta"><span class="room__id">G2</span><span>〜6名</span><span>サウナ・キッチン付</span></div>
+    </article>
+    <article class="room">
+      <figure><img src="assets/img/room-window.jpg" alt="G3 客室の窓からの眺め" loading="lazy"></figure>
+      <div class="room__meta"><span class="room__id">G3</span><span>〜6名</span><span>サウナ・キッチン付</span></div>
+    </article>
+    <article class="room">
+      <figure><img src="assets/img/room-bed.jpg" alt="G4 ベッドルーム" loading="lazy"></figure>
+      <div class="room__meta"><span class="room__id">G4</span><span>〜6名</span><span>サウナ・キッチン付</span></div>
+    </article>
+    <article class="room">
+      <figure><img src="assets/img/vanity.jpg" alt="G5 洗面スペース" loading="lazy"></figure>
+      <div class="room__meta"><span class="room__id">G5</span><span>〜6名</span><span>サウナ・キッチン付</span></div>
+    </article>
+  </div>
+  <p class="wrap rooms__amen">Wi-Fi ／ ワークスペース ／ キッチン・調理器具 ／ 冷蔵庫 ／ 電子レンジ ／ 動画配信サービス対応TV ／ BBQ設備 ／ 無料駐車場</p>
+</section>
+
+<!-- ============ TASTE ============ -->
+<section class="taste" id="taste">
+  <div class="wrap taste__grid">
+    <figure class="taste__main reveal-img"><img src="assets/img/bbq-hearth.jpg" alt="阿蘇を望む炭火の囲炉裏テーブル" loading="lazy"></figure>
+    <div class="taste__txt">
+      <p class="label"><span>04</span>Taste</p>
+      <h2 class="title reveal">山女魚を、<br>炭火でゆっくり。</h2>
+      <p class="reveal">毎週、地元から届く山女魚（やまめ）を、阿蘇の風が通る囲炉裏で。<br>キッチン付きの客室では土鍋でご飯を炊いて、ゆっくりと自分たちの夕べを。</p>
+      <div class="taste__sub">
+        <figure class="reveal-img"><img src="assets/img/donabe.jpg" alt="土鍋と和食器" loading="lazy"></figure>
+        <figure class="reveal-img"><img src="assets/img/garden-tea.jpg" alt="芝生の庭でのティーセット" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANS (個人 / 法人) ============ -->
+<section class="plans" id="plans">
+  <div class="wrap">
+    <p class="label"><span>05</span>Plans</p>
+    <h2 class="title reveal">過ごし方を、えらぶ。</h2>
+
+    <div class="tabs" role="tablist" aria-label="プランの種類">
+      <button class="tabs__btn is-active" role="tab" aria-selected="true" aria-controls="plan-personal" id="tab-personal" data-tab="personal">
+        <small>For Guests</small>個人のお客様
+      </button>
+      <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="plan-biz" id="tab-biz" data-tab="biz">
+        <small>For Business</small>法人のお客様
+      </button>
+      <span class="tabs__ink" aria-hidden="true"></span>
+    </div>
+
+    <!-- 個人 -->
+    <div class="panel is-active" id="plan-personal" role="tabpanel" aria-labelledby="tab-personal">
+      <div class="cards">
+        <article class="card">
+          <figure><img src="assets/img/sauna-window.jpg" alt="" loading="lazy"></figure>
+          <div class="card__body">
+            <p class="card__tag">Stay</p>
+            <h3>ととのい素泊まり</h3>
+            <p>プライベートサウナと水風呂、外気浴を思いのままに。キッチン付きで自炊も自由。</p>
+            <p class="card__price">¥9,400<small>〜 / 名（税込）</small></p>
+          </div>
+        </article>
+        <article class="card">
+          <figure><img src="assets/img/bbq-hearth.jpg" alt="" loading="lazy"></figure>
+          <div class="card__body">
+            <p class="card__tag">Dinner</p>
+            <h3>山女魚と炭火の夜</h3>
+            <p>地元の山女魚と阿蘇の食材を炭火BBQで。サウナ上がりの一杯とともに。</p>
+            <p class="card__price">¥14,000<small>〜 / 名（税込）</small></p>
+          </div>
+        </article>
+        <article class="card">
+          <figure><img src="assets/img/garden.jpg" alt="" loading="lazy"></figure>
+          <div class="card__body">
+            <p class="card__tag">Private</p>
+            <h3>一棟まるごと貸切</h3>
+            <p>全5室と庭、あずまや、焚き火スペースを独占。三世代旅行や仲間の集まりに。</p>
+            <p class="card__price">お問い合わせ<small>最大30名</small></p>
+          </div>
+        </article>
+      </div>
+      <div class="panel__cta"><a href="#reserve" class="btn btn--solid btn--lg">空室を確認する</a></div>
+    </div>
+
+    <!-- 法人 -->
+    <div class="panel panel--biz" id="plan-biz" role="tabpanel" aria-labelledby="tab-biz" hidden>
+      <div class="biz__intro">
+        <h3 class="biz__title">チームが、<br>いちばん本音で話せる場所。</h3>
+        <p>サウナで頭を空にして、焚き火を囲んで語る。会議室では出てこない言葉が、ここでは自然に生まれます。オフサイトミーティング、研修、ワーケーション、福利厚生まで、目的に合わせてご提案します。</p>
+      </div>
+      <div class="cards cards--biz">
+        <article class="card card--line">
+          <p class="card__no">01</p>
+          <h3>オフサイト・ミーティング</h3>
+          <p>日帰り〜1泊。Wi-Fi・ワークスペース完備。午前は議論、午後はサウナと焚き火で対話を深める。</p>
+          <ul><li>5〜30名</li><li>日帰り可</li></ul>
+        </article>
+        <article class="card card--line">
+          <p class="card__no">02</p>
+          <h3>研修・チーム合宿</h3>
+          <p>一棟貸切で、チームだけの時間を。BBQやアクティビティを組み合わせたプログラムもご相談ください。</p>
+          <ul><li>一棟貸切</li><li>最大30名</li></ul>
+        </article>
+        <article class="card card--line">
+          <p class="card__no">03</p>
+          <h3>サウナ・ワーケーション</h3>
+          <p>最大30泊まで。朝は五岳を眺めて仕事をし、夕方はサウナで切り替える。連泊特別料金あり。</p>
+          <ul><li>1〜30泊</li><li>連泊割引</li></ul>
+        </article>
+        <article class="card card--line">
+          <p class="card__no">04</p>
+          <h3>福利厚生・法人契約</h3>
+          <p>社員さまとご家族がいつでも使える法人契約料金。報奨旅行・インセンティブにも。</p>
+          <ul><li>法人料金</li><li>請求書払い</li></ul>
+        </article>
+      </div>
+
+      <ol class="flow">
+        <li><b>01</b>お問い合わせ</li>
+        <li><b>02</b>ヒアリング</li>
+        <li><b>03</b>プラン・お見積り</li>
+        <li><b>04</b>ご利用・ご精算</li>
+      </ol>
+      <div class="panel__cta">
+        <a href="#contact-biz" class="btn btn--solid btn--lg">法人のお問い合わせ</a>
+        <a href="#" class="btn btn--ghost btn--lg">資料をダウンロード（PDF）</a>
+      </div>
+    </div>
+    <p class="note">※ 料金・人数・内容はデザイン用の仮の表記です。正式な情報に差し替えてください。</p>
+  </div>
+</section>
+
+<!-- ============ ACCESS ============ -->
+<section class="access" id="access">
+  <div class="wrap access__grid">
+    <div>
+      <p class="label"><span>06</span>Access</p>
+      <h2 class="title reveal">南阿蘇村、久石。</h2>
+      <dl class="access__dl">
+        <div><dt>住所</dt><dd>熊本県阿蘇郡南阿蘇村久石3292</dd></div>
+        <div><dt>お車</dt><dd>道の駅「あそ望の郷くぎの」から約2分</dd></div>
+        <div><dt>駐車場</dt><dd>無料（各室ごとにご用意）</dd></div>
+        <div><dt>客室</dt><dd>全5室（G1〜G5）／ 1室最大6名</dd></div>
+      </dl>
+    </div>
+    <div class="access__map">
+      <iframe title="5GAKUの地図" src="https://maps.google.com/maps?q=%E7%86%8A%E6%9C%AC%E7%9C%8C%E9%98%BF%E8%98%87%E9%83%A1%E5%8D%97%E9%98%BF%E8%98%87%E6%9D%91%E4%B9%85%E7%9F%B33292&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVE ============ -->
+<section class="reserve" id="reserve">
+  <div class="reserve__bg" style="background-image:url(assets/img/night-fire.jpg)"></div>
+  <div class="reserve__inner">
+    <p class="reserve__en">Your seat, facing the five peaks.</p>
+    <h2 class="reserve__title">五岳の正面で、<br class="sp-only">待っています。</h2>
+    <div class="reserve__btns">
+      <a href="#" class="btn btn--light btn--lg">空室検索・ご予約</a>
+      <a href="#contact-biz" id="contact-biz" class="btn btn--ghost-light btn--lg">法人のお問い合わせ</a>
+    </div>
+    <p class="reserve__best">公式サイトからのご予約がいちばんお得です</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <p class="footer__logo">5GAKU</p>
+      <p class="footer__sub">MINAMIASO SAUNA</p>
+    </div>
+    <p class="footer__addr">熊本県阿蘇郡南阿蘇村久石3292</p>
+    <nav class="footer__nav"><a href="#">Instagram</a><a href="#">よくあるご質問</a><a href="#">プライバシーポリシー</a></nav>
+  </div>
+  <p class="footer__copy">© 5GAKU MINAMIASO SAUNA</p>
+</footer>
+
+<!-- mobile bottom bar -->
+<div class="sp-bar">
+  <a href="#plans" data-plan-link="biz">法人のお客様</a>
+  <a href="#reserve" class="is-main">ご予約</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
